@@ -17,7 +17,9 @@
     font-family: var(--Poppins);
     
 }
-
+body{
+    background-color: var(--background);
+}
 header {
     width: 100%;
     border-bottom: 1px solid rgb(255, 255, 255);
@@ -25,8 +27,8 @@ header {
 }
  
 header img{
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     display: flex;
 }
 #menu-list{
@@ -39,12 +41,15 @@ header img{
     display: flex;
     list-style: none;
 }
-#list-principal a{
+.list-item{
+    margin-left: 7%;
+}
+.list-item a{
     text-decoration: none;
     color: var(--titulo);
     
 }
-#list-principal a:hover{
+.list-item a:hover{
     color: var(--destaque);
 }
 main{
@@ -53,16 +58,16 @@ main{
 section {
     max-width: 100%;
     padding: 3rem 2rem;
-    background-image: url(img/restaurante\ fundo.png);
+    background-image: url(../img/restaurante\ fundo.png);
 }
 .imagem-principal img{
    width: 375px;
    height: 283px;
 }
 .caixa-principal{
-    min-height: 100vh;
+    min-height: 71vh;
     align-items: center;
-    max-width: 1000px;
+    max-width:52%;
     padding-top: 10%;
     margin: 0 auto;
 }
@@ -71,16 +76,17 @@ section {
     font-size: 4rem;
     text-transform: uppercase;
 }
-.caixa-principal p {
+.texto-destaque {
     color: var(--paragrafo);
-    font-family: 2rem;
-    line-height: 1.8rem;
-    padding-bottom: 15px;
+    font-size: 30px;
+    line-height: 1.4rem;
+    padding-bottom: 25px;
 }
 #botao-link{
     text-decoration: none;
     background-color: var(--destaque);
     padding: 15px;
+    font-size: 20px;
     color: var(--background);
     border-radius: 30px;
 }
@@ -95,7 +101,7 @@ article{
     background-color: var(--background);
 }
 .titulo-destaque{
-    padding: 30px;
+    padding: 10px;
     text-align: center;
     color: var(--titulo);
     text-transform: uppercase;
@@ -114,15 +120,22 @@ article{
 }
 .sobre{
     color: var(--paragrafo);
-    text-align: center;
 }
-.sobre p{
-    padding-bottom:10px;
-}
-aside{
+.texto-sobre{
     margin: auto;
     min-width: 300px;
-    max-width:1000px;
+    max-width: 94%;
+    padding-bottom:10px;
+    font-size: 18px;
+}
+aside{
+    display: flex;
+    gap: 40px;
+    margin-top: 30px;
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+    margin-left: 5%;
 
 }
 .botao-sobre{
@@ -143,11 +156,9 @@ aside{
 }
 
 .sobremesa {
-    padding-bottom: 10px;
     color: #a7a9be;
     border: 1px solid var(--botao);
     padding: 15px;
-    margin-bottom: 20px;
 }
 .sobremesa h4{
     text-transform: uppercase;
@@ -180,13 +191,14 @@ aside{
     color: var(--paragrafo);
     border: 1px solid var(--botao);
     padding: 20px;
-    margin-top: 0 auto;
+   
 }
 .pratos h4{
     text-transform: uppercase;
 }
 .pratos p{
     padding: 10px;
+    padding-top: 20px;
     display: inline-block;
 }
 .pratos img{
@@ -210,6 +222,7 @@ aside{
     border: 1px solid var(--destaque);
 }
 .churrasco{
+    display: inline-block;
     padding-bottom: 10px;
     color: #a7a9be;
     border: 1px solid var(--botao);
@@ -247,17 +260,15 @@ footer{
     padding: 10px;
     background-color: var(--terciario);
     color: var(--paragrafo);
-    
+    text-align: center;
+    padding-bottom: 40px;
 }
 footer h3{
     text-transform: uppercase;
     color: var(--background);
-    margin-left: 7%;
+    padding-bottom: 20px;
 }
 .contato{
-    display: flex;
-    align-items: center;
-    justify-content: center;
     background-color: var(--destaque);
     padding: 10px;
     border-radius: 30px;
@@ -271,10 +282,8 @@ footer h3{
     transition: 1s;
 }
 .email{
-    display: flex;
-   align-items: center;
-   justify-content: center;
     background-color: var(--destaque);
+    margin-left: 15px;
     padding: 10px;
     margin-top: 10px;
     border-radius: 30px;
@@ -286,4 +295,94 @@ footer h3{
     border: 1px solid var(--destaque);
     color: var(--botao);
     transition: 1s;
+}
+@media screen and (max-width:2064px){
+header {
+    width: 100%;
+}
+#list-principal{
+    gap: 10px;
+}
+section{
+    height: 100vh;
+    font-size: 10px;
+}   
+.texto-sobre{
+    text-align: justify;
+    text-indent: 15px;
+}
+.caixa-principal{
+    min-height: 20vh;
+    max-width: 100%;
+}
+.caixa-principal h1{
+    font-size: 2rem;
+}
+.texto-destaque{
+    line-height: 1.2rem;
+    font-size: 20px;
+}
+.titulo-destaque{
+    font-size: 35px;
+}
+.imagem-destaque img{
+    width: 290px;
+}
+aside{
+    display: block;
+    margin-left: 0%;
+    gap: 20px;
+    padding: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 5px;
+    background-color: var(--background);
+}
+.Avaliacoes-central{
+    padding: 0px;
+}
+.sobremesa{
+    padding-bottom: 15px;
+}
+.sobremesa img{
+    width: 240px;
+}
+.sobremesa p{
+    text-indent: 20px;
+    text-align: justify;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.sobremesa a{
+    margin-bottom: 10px;
+}
+.pratos{
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding-top:5px;
+}
+.pratos p{
+    text-align: justify;
+    text-indent: 20px;
+}
+.pratos img{
+    width: 240px;
+}
+.churrasco{
+    padding-bottom: 15px;
+}
+.churrasco p{
+    text-align: justify;
+    text-indent: 20px;
+}
+.churrasco img{
+    width: 240px;
+}
+footer{
+  margin-top: 16px;
+}
+.email{
+    display: inline-block;
+    margin-top: 16px;
+}
 }
