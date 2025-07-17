@@ -29,7 +29,7 @@ link para abrir no website [ [https://raphaelantonio-tech.github.io/Restaurante-
 - Ajustes na organização dos conteúdos deixando a interface mais bonita, leve e otimizada
 
 ## 📌 Status
--✔️ Projeto finalizado 
--📁 Aberto para feedbacks e melhorias futuras
+- ✔️ Projeto finalizado 
+- 📁 Aberto para feedbacks e melhorias futuras
 
 👨🏽‍💻 Desenvolvido por [ RaphaelAntonio-Tech ]
